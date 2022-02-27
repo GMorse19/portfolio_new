@@ -1,11 +1,14 @@
 import react from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row, Col, Button } from 'react-bootstrap'
 
 import './HomePage.scss'
 
+import ObjectMover from '../../helpers/ObjectMover/ObjectMover'
+
 const HomePage = () => {
   return(
-      <Container className='justify-content-center' fluid>
+      <Container className='home-page-container justify-content-center' fluid>
+      <ObjectMover /> 
         <Row>
             <Col lg={6}>
               <h1 id='profile-name'>Geoff Morse</h1>
@@ -19,6 +22,8 @@ const HomePage = () => {
         <Row>
           <Col md={{ span: 3, offset: 5}} id="letter-g"></Col>
         </Row>
+        <Button>About Me</Button>
+
       </Container>
   )
 }
