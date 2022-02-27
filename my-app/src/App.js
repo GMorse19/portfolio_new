@@ -1,13 +1,13 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+
+import HomePage from './Pages/HomePage'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          GPORT.
-        </p>
+        <HomePage />
         <a
           className="App-link"
           href="https://gmorse19.github.io/"
