@@ -9,8 +9,12 @@ const HomePage = () => {
         <Row>
             <Col lg={6}>
               <h1 id='profile-name'>Geoff Morse</h1>
-              <p>Software Engineer</p>
             </Col>
+        </Row>
+        <Row>
+          <Col lg={4}>
+            <p id='profile-title'>Software Engineer</p>
+          </Col>
         </Row>
         <Row>
           <Col md={{ span: 3, offset: 5}} id="letter-g"></Col>

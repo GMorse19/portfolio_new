@@ -28,30 +28,6 @@
   color: #61dafb;
 }
 
-#letter-g {
-    position: relative;
-    width: 100px;
-    height: 90px;
-    border-width: 20px 0 20px 20px;
-    border-style: solid;
-    border-color: blue transparent blue blue;
-    background-color: transparent;
-    border-radius: 10px;
-}
-
-#letter-g::before {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: -10px;
-    width: 15px;
-    height: 35px;
-    border-width: 10px 10px 10px 0;
-    border-color: blue;
-    border-style: solid;
-    border-radius: 0 10px 10px 0;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
