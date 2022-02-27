@@ -3,13 +3,18 @@ import { Container, Row, Col } from 'react-bootstrap'
 
 import './Portfolio.scss'
 
-const Portfolio = () => (
-  <Container className='portfolio-container'>
+import ProjectList from '../../Components/ProjectList/ProjectList'
+
+const Portfolio = (props) => (
+  <Container className='portfolio-container justify-content-center'>
     <Row>
       <Col>
         Portfolio
       </Col>
     </Row>
+    <Row>
+      <ProjectList />
+      </Row>
   </Container>
 )
 
