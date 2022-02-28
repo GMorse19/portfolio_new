@@ -1,4 +1,5 @@
 import react from 'react'
+import { Button } from 'react-bootstrap'
 
 import './ObjectMover.scss'
 
@@ -121,17 +122,20 @@ var x = new RandomObjectMover(document.getElementById('a'), window);
 
 // Start it off
 
-// x.start();
+x.start();
+// const start = () => {
+// 	x.start()
+// }
+//
+// const stop = () => {
+// 	x.stop()
+// }
 
 return (
   <div>
-  <div id="toolbar">
-    <button onClick={x.start()} id="start">Start</button>
-    <button onClick={x.stop()} id="stop">Stop</button>
 
-    </div>
-  <div id='a'></div>
-</div>
+	  <div id='a'><Button  href='https://github.com/GMorse19/off-street'>button</Button></div>
+	</div>
 )
 }
 
