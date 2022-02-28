@@ -16,7 +16,7 @@ const ProjectContainer = (props) => (
         </div>
         <div className='project links'>
           <a href={props.siteUrl}>
-            <i class="icon-social-github"></i>
+            <i class="icon-rocket"></i>
           </a>
           <a href={props.github}>
             <i class="icon-social-github"></i>
