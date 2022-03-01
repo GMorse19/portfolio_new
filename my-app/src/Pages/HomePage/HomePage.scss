@@ -27,13 +27,17 @@
 // }
 
 #profile-name {
-  color: blue;
+  position: relative;
+  color: #0099e6;
   font-size: 100px;
   line-height: 1em;
   padding-top: 30%;
+  z-index: 1000;
 }
 
 #profile-title {
+  position: relative;
   color: grey;
   line-height: .01em;
+  z-index: 1000;
 }

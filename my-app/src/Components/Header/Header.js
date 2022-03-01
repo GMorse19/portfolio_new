@@ -4,7 +4,7 @@ import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap'
 import './Header.scss'
 
 const Header = () => (
-  <Navbar bg="dark" variant='dark' expand="lg">
+  <Navbar bg="dark" variant='dark' expand="lg" className='header-container'>
   <Container>
   <Navbar.Brand href="#home">geoff morse</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />

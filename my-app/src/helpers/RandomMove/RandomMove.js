@@ -7,12 +7,21 @@ import './RandomMove.scss'
 
 
 const RandomMove = () => {
+const [diva, setDiva] = useState(true)
+const [divb, setDivb] = useState(true)
+const [divc, setDivc] = useState(true)
+const [divd, setDivd] = useState(true)
 
+// Thank you to Amit Rogye --> https://codepen.io/cooljockey/pen/yLjXYz
+// The animation for the buttons was based largely on Amit's codepen
+useEffect(() => {
 $(document).ready(function(){
     animateDiv('.a');
     animateDiv('.b');
     animateDiv('.c');
+    animateDiv('.d');
 });
+})
 
 const makeNewPosition = () => {
     // Get viewport dimensions (remove the dimension of the div)
@@ -28,22 +37,56 @@ const makeNewPosition = () => {
 
 const animateDiv = (myclass) => {
     const newq = makeNewPosition()
-    $(myclass).animate({ top: newq[0], left: newq[1] }, 2000,   function(){
+    $(myclass).animate({ top: newq[0], left: newq[1] }, 10000,   function(){
       animateDiv(myclass)
     })
 }
 
- const handleClick = () => animateDiv('.d')
- const handleStop = () => $('.d').stop()
+ const handleStop = (id) => $(id).stop()
+ const handleStart = (id) => animateDiv(id)
 
   return (
     <div>
-    <div className='d'><Button onClick={handleClick}>Start</Button></div>
-    <div className='a'><Button onClick={handleStop}>Stop</Button></div>
-
-      <div className='b'></div>
-      <div className='c'></div>
-
+        <div className='a'>
+          <Button
+            className='circle-button button-a'
+            onMouseLeave={() => handleStart('.a')}
+            onMouseEnter={() => handleStop('.a')}>
+            <a href='https://github.com/GMorse19' target='_blank'>
+              <i class="icon-social-github icon" title='Gitub'></i>
+            </a>
+          </Button>
+        </div>
+        <div className='b'>
+          <Button
+            className='circle-button button-b'
+            onMouseLeave={() => handleStart('.b')}
+            onMouseEnter={() => handleStop('.b')}>
+            <a href='https://github.com/GMorse19' target='_blank'>
+             <i class="icon-user icon" title='about me'></i>
+            </a>
+          </Button>
+        </div>
+        <div className='c'>
+          <Button
+            className='circle-button button-c'
+            onMouseLeave={() => handleStart('.c')}
+            onMouseEnter={() => handleStop('.c')}>
+            <a href='https://github.com/GMorse19' target='_blank'>
+              <i class="icon-social-linkedin icon" title='LinkedIn'></i>
+            </a>
+          </Button>
+        </div>
+        <div className='d'>
+          <Button
+            className='circle-button button-d'
+            onMouseLeave={() => handleStart('.d')}
+            onMouseEnter={() => handleStop('.d')}>
+            <a href='https://github.com/GMorse19' target='_blank'>
+             <i class="icon-book-open icon" title='resume'></i>
+            </a>
+          </Button>
+        </div>
     </div>
   )
 }
