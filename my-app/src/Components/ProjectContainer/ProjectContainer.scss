@@ -1,6 +1,7 @@
 $bg: #FEF5DF;
 
 .project-container-wrapper {
+  position: relative;
   width: 50vw;
   height: 50vh;
 
@@ -14,6 +15,8 @@ $bg: #FEF5DF;
 
   -webkit-box-shadow: 0 0 15px #000;
         box-shadow: 0 0 15px #000;
+
+  z-index: 1000;
 }
 
 .overlay {
