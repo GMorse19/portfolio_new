@@ -1,51 +1,91 @@
+a { color: inherit; }
+
 .circle-button-wrapper {
   position: relative;
 }
 
 .circle-button {
-  border-radius: 50px;
-  height: 100px;
-  width: 200px;
+  border-radius: 300px;
+  height: 150px;
+  width: 300px;
+}
+
+.button-a {
+  background-color: #006699;
+}
+
+.button-a:hover {
+  background-color: #004466;
+}
+
+.button-b {
+  background-color: #b2ad7f;
+}
+
+.button-b:hover {
+  background-color: #807a4d;
+}
+
+.button-c {
+  background-color: #878f99;
+}
+
+.button-c:hover {
+  background-color: #6a727c;
+}
+
+.button-d {
+  background-color: #6b5b95;
+}
+
+.button-d:hover {
+  background-color: #50446f;
 }
 
 div.a {
-  padding-top: 5%;
+  // padding-top: 5%;
   width: 300px;
   height: 250px;
- background-color:red;
-position:fixed;
-border-radius: 150px;
-
+  // background-color:red;
+  position:fixed;
+  border-radius: 150px;
 }
 
 div.b {
-    padding-top: 5%;
+    // padding-top: 5%;
   width: 300px;
   height: 250px;
- background-color:purple;
-position:fixed;
-border-radius: 150px;
-
+  // background-color:purple;
+  position:fixed;
+  border-radius: 150px;
 }
+
 div.c {
-    padding-top: 5%;
+    // padding-top: 5%;
   width: 300px;
   height: 250px;
- background-color:green;
-position:fixed;
-border-radius: 150px;
-
+  // background-color:green;
+  position:fixed;
+  border-radius: 150px;
 }
+
 div.d {
-padding-top: 5%;
-width: 300px;
-height: 250px;
-background-color:yellow;
-position:fixed;
-border-radius: 150px;
-z-index: 0;
-
+  // padding-top: 5%;
+  width: 300px;
+  height: 250px;
+  // background-color:yellow;
+  position:fixed;
+  border-radius: 150px;
+  z-index: 0;
 }
+
+.icon {
+  font-size: 5em;
+}
+
+// .icon-social-linkedin {
+//   font-size: 5em;
+// }
 
 // .vertical-center {
 //   margin: 0;
