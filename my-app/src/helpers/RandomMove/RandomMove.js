@@ -5,8 +5,10 @@ import { Button } from 'react-bootstrap'
 
 import './RandomMove.scss'
 
+import AboutModal from '../../Components/AboutModal/AboutModal'
 
-const RandomMove = () => {
+
+const RandomMove = (props) => {
 const [diva, setDiva] = useState(true)
 const [divb, setDivb] = useState(true)
 const [divc, setDivc] = useState(true)
@@ -49,7 +51,7 @@ const animateDiv = (myclass) => {
     <div>
         <div className='a'>
           <Button
-            className='circle-button button-a'
+            className='circle-button button-a btn'
             onMouseLeave={() => handleStart('.a')}
             onMouseEnter={() => handleStop('.a')}>
             <a href='https://github.com/GMorse19' target='_blank'>
@@ -58,14 +60,12 @@ const animateDiv = (myclass) => {
           </Button>
         </div>
         <div className='b'>
-          <Button
+          <AboutModal
             className='circle-button button-b'
-            onMouseLeave={() => handleStart('.b')}
-            onMouseEnter={() => handleStop('.b')}>
-            <a href='https://github.com/GMorse19' target='_blank'>
-             <i class="icon-user icon" title='about me'></i>
-            </a>
-          </Button>
+            leave={() => handleStart('.b')}
+            enter={() => handleStop('.b')}
+            image={<i class="icon-user icon" title='about me'></i>}
+          />
         </div>
         <div className='c'>
           <Button
