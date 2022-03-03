@@ -14,6 +14,7 @@ const [divb, setDivb] = useState(true)
 const [divc, setDivc] = useState(true)
 const [divd, setDivd] = useState(true)
 
+let randomContainer = document.querySelector('.random-container');
 // Thank you to Amit Rogye --> https://codepen.io/cooljockey/pen/yLjXYz
 // The animation for the buttons was based largely on Amit's codepen
 useEffect(() => {
@@ -27,8 +28,8 @@ $(document).ready(function(){
 
 const makeNewPosition = () => {
     // Get viewport dimensions (remove the dimension of the div)
-    const h = $(window).height() - 50;
-    const w = $(window).width() - 50;
+    const h = $(randomContainer).height() - 50;
+    const w = $(randomContainer).width() - 50;
 
     const nh = Math.floor(Math.random() * h)
     const nw = Math.floor(Math.random() * w)
@@ -48,7 +49,7 @@ const animateDiv = (myclass) => {
  const handleStart = (id) => animateDiv(id)
 
   return (
-    <div>
+    <div className='random-container'>
         <div className='a'>
           <Button
             className='circle-button button-a btn'
