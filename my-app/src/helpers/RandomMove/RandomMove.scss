@@ -12,6 +12,8 @@ a { color: inherit; }
 
 .button-a {
   background-color: #006699;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .button-a:hover {

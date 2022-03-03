@@ -3,6 +3,8 @@ import { Container, Row, Col } from 'react-bootstrap'
 
 import './Folder.scss'
 
+import AboutModal from '../AboutModal/AboutModal'
+
 const Footer = () => (
   <Container className='footer-container' fluid>
     <Row>
@@ -12,9 +14,7 @@ const Footer = () => (
         <p>Footer</p>
       </Col>
       <Col>
-        <p>Footer</p>
-        <p>Footer</p>
-        <p>Footer</p>
+        <AboutModal />
       </Col>
       <Col>
         <p>Footer</p>
