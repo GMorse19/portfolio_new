@@ -72,7 +72,7 @@ const animateDiv = (myclass) => {
             className='circle-button button-c'
             onMouseLeave={() => handleStart('.c')}
             onMouseEnter={() => handleStop('.c')}>
-            <a href='https://github.com/GMorse19' target='_blank'>
+            <a href='https://www.linkedin.com/in/geoff-morse19/' target='_blank'>
               <i class="icon-social-linkedin icon" title='LinkedIn'></i>
             </a>
           </Button>

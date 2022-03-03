@@ -1,7 +1,10 @@
 import react, { useState } from 'react'
-import { Modal, Button } from 'react-bootstrap'
+import { Modal, Button, Row, Col, Container } from 'react-bootstrap'
 
 import './AboutModal.scss'
+
+import ContactForm from '../ContactForm/ContactForm'
+import AboutMe from '../AboutMe/AboutMe'
 
 const AboutModal = (props) => {
 
@@ -22,10 +25,17 @@ const AboutModal = (props) => {
       </Button>
 
       <Modal size='lg' centered show={show} onHide={handleClose} style={{}}>
-      <Modal.Header closeButton className='about-modal'>
-              <Modal.Title>Contact</Modal.Title>
-            </Modal.Header>
-        <Modal.Body className='about-modal-body'>I'll use this area to say some great things about myself</Modal.Body>
+
+      <Container className='justify-content-center' fluid>
+          <Row className='justify-content-center'>
+            <Col className='about-me-container'>
+              <AboutMe />
+            </Col>
+            <Col className='contact-container'>
+              <ContactForm />
+            </Col>
+          </Row>
+        </Container>
 
       </Modal>
     </>
