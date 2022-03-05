@@ -1,5 +1,5 @@
 import react from 'react'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import $ from 'jquery'
 import { Button } from 'react-bootstrap'
 
@@ -13,11 +13,16 @@ const [diva, setDiva] = useState(true)
 const [divb, setDivb] = useState(true)
 const [divc, setDivc] = useState(true)
 const [divd, setDivd] = useState(true)
+const [height, setHeight] = useState(0)
+const [width, setWidth] = useState(0)
 
-let randomContainer = document.querySelector('.random-container');
+const ref = useRef(null)
+
 // Thank you to Amit Rogye --> https://codepen.io/cooljockey/pen/yLjXYz
 // The animation for the buttons was based largely on Amit's codepen
 useEffect(() => {
+setHeight(ref.current.clientHeight)
+setWidth(ref.current.clientWidth)
 $(document).ready(function(){
     animateDiv('.a');
     animateDiv('.b');
@@ -28,8 +33,10 @@ $(document).ready(function(){
 
 const makeNewPosition = () => {
     // Get viewport dimensions (remove the dimension of the div)
-    const h = $(randomContainer).height() - 50;
-    const w = $(randomContainer).width() - 50;
+    // const h = height;
+    // const w = width - 50;
+    const w = $(window).width() - 50;
+    const h = $(window).height() - 50;
 
     const nh = Math.floor(Math.random() * h)
     const nw = Math.floor(Math.random() * w)
@@ -48,8 +55,12 @@ const animateDiv = (myclass) => {
  const handleStop = (id) => $(id).stop()
  const handleStart = (id) => animateDiv(id)
 
+console.log(height)
+console.log(width)
+
   return (
-    <div className='random-container'>
+    <div ref={ref} id=''>
+
         <div className='a'>
           <Button
             className='circle-button button-a btn'
