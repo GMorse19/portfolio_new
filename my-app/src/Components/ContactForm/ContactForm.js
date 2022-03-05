@@ -1,11 +1,15 @@
 import react from 'react'
-import { Col, Form, Button } from 'react-bootstrap'
+import { Col, Form, Button, Row } from 'react-bootstrap'
 
 import './ContactForm.scss'
 
-const ContactForm = () => {
+const ContactForm = (props) => {
   return (
     <Col className='contact-container'>
+    <Row sm={12}>
+      <Button className='close-button' onClick={props.handleClose}>X</Button>
+    </Row>
+    <br/ >
     <Form>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>

@@ -32,7 +32,9 @@ const AboutModal = (props) => {
               <AboutMe />
             </Col>
             <Col className='contact-container'>
-              <ContactForm />
+              <ContactForm
+                handleClose={handleClose}
+              />
             </Col>
           </Row>
         </Container>
