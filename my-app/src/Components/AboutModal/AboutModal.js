@@ -25,8 +25,8 @@ const AboutModal = (props) => {
       </Button>
 
       <Modal size='lg' centered show={show} onHide={handleClose} style={{}}>
-
-      <Container className='justify-content-center' fluid>
+      <Modal.Body >
+      <Container scrollable className='justify-content-center' fluid>
           <Row className='justify-content-center'>
             <Col className='about-me-container'>
               <AboutMe />
@@ -38,7 +38,7 @@ const AboutModal = (props) => {
             </Col>
           </Row>
         </Container>
-
+        </Modal.Body>
       </Modal>
     </>
   )
