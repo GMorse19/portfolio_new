@@ -1,8 +1,15 @@
+.button-container {
+  width: 100%;
+}
+
 .close-button {
   background-color: transparent;
   background-repeat:no-repeat;
   border: none;
   font-size: 3em;
+  // padding-bottom: 5%;
+  // position: absolute;
+  width: 75px;
   float: right;
 }
 
@@ -11,13 +18,29 @@
   background-repeat:no-repeat;
   border: none;
   color: red;
+
 }
 
 .contact-container {
   background-color: #0099e6;
   height: 70vh;
   padding-bottom: 5%;
-  // width: 50%;
   text-align: center;
   overflow: scroll;
+}
+
+.form-field {
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: red;
+  border-width: thick;
+  color: #fff;
+}
+
+.form-field:hover {
+  background-color: transparent;
+  border-color: green;
+  color: #fff;
 }
