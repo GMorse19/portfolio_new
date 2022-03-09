@@ -17,7 +17,7 @@ const ContactForm = (props) => {
     <br />
     <Form.Group className="mb-3" controlId="formBasicName">
       <Form.Label>Name</Form.Label>
-      <Form.Control className='form-field' type="name" placeholder="Name" />
+      <Form.Control className='form-field color-transition' type="name" placeholder="Name" />
     </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicEmail">
