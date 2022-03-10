@@ -9,6 +9,7 @@ const ContactForm = (props) => {
     <Col className='contact-container'>
     <Row lg={12}>
     <Col>
+    <button className='draw'>BUTTON</button>
       <Button className='close-button' onClick={props.handleClose}>X</Button>
       </Col>
       </Row>
