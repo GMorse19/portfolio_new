@@ -16,13 +16,17 @@ const AboutModal = (props) => {
 
   return (
     <>
-      <Button
+      {!props.type && <Button
         className={props.className}
         onMouseEnter={props.enter}
         onMouseLeave={props.leave}
         onClick={handleShow}>
         {props.image}
-      </Button>
+      </Button>}
+
+    {props.type &&
+      <a href='#' onClick={handleShow}>{props.image}</a>
+    }
 
       <Modal size='lg' centered show={show} onHide={handleClose} style={{}}>
       <Modal.Body >

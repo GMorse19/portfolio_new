@@ -4,11 +4,13 @@ import { Container, Row, Col, Button } from 'react-bootstrap'
 import './HomePage.scss'
 
 import RandomMove from '../../helpers/RandomMove/RandomMove'
+import StaticLinks from '../../Components/StaticLinks/StaticLinks'
 
 const HomePage = () => {
   return(
       <Container className='home-page-container justify-content-center' fluid>
-      <RandomMove />
+      <StaticLinks />
+      
         <Row>
             <Col lg={6}>
               <h1 id='profile-name'>Geoff Morse</h1>
