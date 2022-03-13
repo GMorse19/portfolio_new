@@ -1,0 +1,22 @@
+.static-links-a {
+  padding-top: 15px;
+}
+
+.static-links-container {
+  background-color: transparent;
+  display: grid;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.static-links-icon {
+  font-size: 1em;
+  color: red;
+}
+
+.static-links-icon:hover {
+  color:blue;
+}

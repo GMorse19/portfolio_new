@@ -4,7 +4,7 @@ import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap'
 import './Header.scss'
 
 // import ContactForm from '../ContactForm/ContactForm'
-import AboutModal from '../AboutModal/AboutModal'
+// import AboutModal from '../AboutModal/AboutModal'
 
 const Header = (props) => (
   <Navbar bg="dark" variant='dark' expand="lg" className='header-container'>
@@ -24,11 +24,7 @@ const Header = (props) => (
         </NavDropdown>
       </Nav>
     </Navbar.Collapse>
-  <AboutModal
-    leave={() => props.handleStart('.b')}
-    enter={() => props.handleStop('.b')}
-    image={<i class="icon-user icon" title='contact'></i>}
-  />
+
   </Container>
   </Navbar>
 )
