@@ -1,7 +1,7 @@
 import react from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 
-import './Folder.scss'
+import './Footer.scss'
 
 import AboutModal from '../AboutModal/AboutModal'
 

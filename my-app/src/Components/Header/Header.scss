@@ -1,4 +1,15 @@
+@import '../../helpers/styles';
+
 .header-container {
-  color: #fff !important;
+  color: red; // $font-color !important;
+  background-color: $background-color-less-dark;
   z-index: 1000;
+}
+
+Nav {
+  color: red;
+}
+
+.header-brand {
+  color: red;
 }

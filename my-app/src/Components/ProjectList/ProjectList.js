@@ -14,7 +14,7 @@ const ProjectList= (props) => (
       github='https://github.com/GMorse19/off-street'
       siteUrl='https://gmorse19.github.io/off-street/#/'
       image='/img/Off-Street.png'
-      offset='2'
+      offset=''
     />
     <ProjectContainer
       title='Work From Roam'
@@ -22,6 +22,8 @@ const ProjectList= (props) => (
       github='https://github.com/sei-uxdi-collab/work_from_roam-client'
       siteUrl='https://sei-uxdi-collab.github.io/work_from_roam-client/#/'
       image='/img/WorkFromRoam.png'
+      position='right'
+      offset=''
     />
     <ProjectContainer
       title='Whats Your Problem?'
@@ -29,7 +31,7 @@ const ProjectList= (props) => (
       github='https://github.com/GMorse19/whats-your-problem-client'
       siteUrl='https://gmorse19.github.io/whats-your-problem-client/'
       image='/img/WYP.png'
-      offset='3'
+      offset=''
     />
     <ProjectContainer
       title='Bee Hive'
@@ -37,7 +39,7 @@ const ProjectList= (props) => (
       github='https://github.com/GMorse19/beehiveClient'
       siteUrl='https://gmorse19.github.io/beehiveClient/'
       image='/img/BeeHive.png'
-      offset='1'
+      offset=''
     />
 </Row>
 )

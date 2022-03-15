@@ -3,9 +3,11 @@ import { Col } from 'react-bootstrap'
 
 import './ProjectContainer.scss'
 
-const ProjectContainer = (props) => (
+const ProjectContainer = (props) => {
+  return (
   <Col lg={{ offset: props.offset }}>
   <div className='project-container-wrapper' style={{ backgroundImage: `url(${props.image})`}}>
+
     <div className='overlay'>
       <div className='project'>
         <div className='head'>
@@ -27,8 +29,10 @@ const ProjectContainer = (props) => (
         </div>
       </div>
     </div>
+    <div className='hidden'>Hidden</div>
 </div>
   </Col>
 )
+}
 
 export default ProjectContainer

@@ -1,3 +1,4 @@
+@import '../../helpers/styles';
 
 .home-page-container {
   height: 100vh;
@@ -28,7 +29,7 @@
 
 #profile-name {
   position: relative;
-  color: #0099e6;
+  color: $title-color;
   font-size: 100px;
   line-height: 1em;
   padding-top: 30%;
@@ -37,7 +38,7 @@
 
 #profile-title {
   position: relative;
-  color: grey;
+  color: $font-color; // grey;
   line-height: .01em;
   z-index: 1000;
 }

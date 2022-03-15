@@ -10,7 +10,7 @@ import Portfolio from './Pages/Portfolio/Portfolio'
 function App() {
   return (
     <div className="App">
-        <Header />
+      
       <header className="App-header">
         <HomePage />
         <Portfolio />
