@@ -1,3 +1,5 @@
+@import '../../helpers/styles';
+
 .static-links-a {
   padding-top: 15px;
 }
@@ -14,9 +16,9 @@
 
 .static-links-icon {
   font-size: 1em;
-  color: red;
+  color: $font-color;
 }
 
 .static-links-icon:hover {
-  color:blue;
+  color: $font-color-light;
 }
