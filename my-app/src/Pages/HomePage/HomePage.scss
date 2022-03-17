@@ -30,6 +30,9 @@
 #profile-name {
   position: relative;
   color: $title-color;
+  float: left;
+  margin-left: 15%;
+  font-family: $font-playfair;
   font-size: 100px;
   line-height: 1em;
   padding-top: 30%;
@@ -38,7 +41,9 @@
 
 #profile-title {
   position: relative;
+  float: left;
+  margin-left: 20%;
   color: $font-color; // grey;
-  line-height: .01em;
+  line-height: .5em;
   z-index: 1000;
 }

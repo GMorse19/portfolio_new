@@ -29,7 +29,7 @@ const ProjectContainer = (props) => {
         </div>
       </div>
     </div>
-    <div className='hidden'>Hidden</div>
+    
 </div>
   </Col>
 )

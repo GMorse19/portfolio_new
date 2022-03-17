@@ -7,11 +7,12 @@
 .static-links-container {
   background-color: transparent;
   display: grid;
-  position: absolute;
+  position: fixed;
   right: 5%;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  z-index: 3;
 }
 
 .static-links-icon {

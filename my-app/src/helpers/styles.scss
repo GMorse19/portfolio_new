@@ -1,7 +1,7 @@
 $background-color: #2D4263; // #282c34;
 $background-color-dark: #191919;
 $background-color-less-dark: rgba($background-color-dark, .9);
-$background-color-light: rgba($background-color, 0.88);
+$background-color-light: rgba(97, 130, 184, .1);
 $background-color-portfolio: #C84B31; // grey;
 
 // Fonts
@@ -13,3 +13,6 @@ $portfolio-color: #FEF5DF;
 // Links
 $link-color: #fff;
 $link-hover-color: blue;
+
+// Fonts
+$font-playfair: 'Playfair Display', serif;

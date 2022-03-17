@@ -9,7 +9,7 @@ const Portfolio = (props) => (
   <Container className='portfolio-container justify-content-center'>
     <Row>
       <Col>
-        Portfolio
+        <h1 className='portfolio-title'>Things <br /> I've worked on.</h1>
       </Col>
     </Row>
     <Row>
