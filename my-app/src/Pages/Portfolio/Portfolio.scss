@@ -2,7 +2,15 @@
 
 .portfolio-container {
   height: 100%;
-  background-color: $background-color-dark; // grey;
+  background-color: $background-color; // grey;
   padding: 5% 0 5% 0;
   z-index: 1;
+}
+
+.portfolio-title {
+  font-family: $font-playfair;
+  font-size: 75px;
+  text-align: left;
+  color: $font-color;
+  margin: 0 0 15% 5%;
 }
