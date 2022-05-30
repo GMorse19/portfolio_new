@@ -3,13 +3,14 @@ import { useEffect, useState, useRef } from 'react'
 import $ from 'jquery'
 import { Button } from 'react-bootstrap'
 
-import './RandomMove.scss'
+import './RandomMove0.scss'
 
 import AboutModal from '../../Components/AboutModal/AboutModal'
+import Ball from '../../Components/Ball/Ball'
 
 
 const RandomMove = (props) => {
-const [diva, setDiva] = useState(true)
+const [divaa, setDivaa] = useState(true)
 const [divb, setDivb] = useState(true)
 const [divc, setDivc] = useState(true)
 const [divd, setDivd] = useState(true)
@@ -24,7 +25,7 @@ useEffect(() => {
 setHeight(ref.current.clientHeight)
 setWidth(ref.current.clientWidth)
 $(document).ready(function(){
-    animateDiv('.a');
+    animateDiv('.aa');
     animateDiv('.b');
     animateDiv('.c');
     animateDiv('.d');
@@ -61,12 +62,12 @@ console.log(width)
   return (
     <div ref={ref} id=''>
 
-        <div className='a'>
-          <p>button a</p>
+        <div className='aa'>
+          <Ball />
         </div>
-        
+
         <div className='d'>
-          <p>button d</p>
+          <Ball />
         </div>
     </div>
   )
