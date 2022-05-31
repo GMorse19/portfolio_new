@@ -46,7 +46,7 @@ a { color: inherit; }
   background-color: #50446f;
 }
 
-div.aa {
+div.a {
   // padding-top: 5%;
   width: 400px;
   height: 400px;
@@ -55,23 +55,23 @@ div.aa {
   border-radius: 150px;
 }
 
-// div.b {
-//     // padding-top: 5%;
-//   width: 400px;
-//   height: 400px;
-//   background-color: $background-color-light;
-//   position:fixed;
-//   border-radius: 150px;
-// }
-//
-// div.c {
-//   // padding-top: 5%;
-//   width: 400px;
-//   height: 400px;
-//   background-color: $background-color-light;
-//   position:fixed;
-//   border-radius: 150px;
-// }
+div.b {
+    // padding-top: 5%;
+  width: 400px;
+  height: 400px;
+  // background-color: $background-color-light;
+  position:fixed;
+  border-radius: 150px;
+}
+
+div.c {
+  // padding-top: 5%;
+  width: 400px;
+  height: 400px;
+  // background-color: $background-color-light;
+  position:fixed;
+  border-radius: 150px;
+}
 
 div.d {
   // padding-top: 5%;
