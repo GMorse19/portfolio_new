@@ -36,8 +36,8 @@ const makeNewPosition = () => {
     // Get viewport dimensions (remove the dimension of the div)
     // const h = height;
     // const w = width - 50;
-    const w = $(window).width() - 50;
-    const h = $(window).height() - 50;
+    const w = $(window).width() - 200;
+    const h = $(window).height() - 200; // orginally 50
 
     const nh = Math.floor(Math.random() * h)
     const nw = Math.floor(Math.random() * w)
@@ -56,33 +56,34 @@ const animateDiv = (myclass) => {
  const handleStop = (id) => $(id).stop()
  const handleStart = (id) => animateDiv(id)
 
-// console.log(height)
-// console.log(width)
-
   return (
-    <div ref={ref} id=''>
+    <div className='rando-wrapper' ref={ref} id=''>
 
         <div className='a'>
           <Ball
             diameter= '100'
+            speed= '3'
           />
         </div>
 
         <div className='b'>
           <Ball
             diameter= '150'
+            speed= '2'
           />
         </div>
 
         <div className='c'>
           <Ball
             diameter= '70'
+            speed= '1'
           />
         </div>
 
         <div className='d'>
           <Ball
             diameter= '200'
+            speed= '5'
           />
         </div>
     </div>
