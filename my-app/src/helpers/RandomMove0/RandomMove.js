@@ -10,7 +10,7 @@ import Ball from '../../Components/Ball/Ball'
 
 
 const RandomMove = (props) => {
-const [divaa, setDivaa] = useState(true)
+const [diva, setDiva] = useState(true)
 const [divb, setDivb] = useState(true)
 const [divc, setDivc] = useState(true)
 const [divd, setDivd] = useState(true)
@@ -25,7 +25,7 @@ useEffect(() => {
 setHeight(ref.current.clientHeight)
 setWidth(ref.current.clientWidth)
 $(document).ready(function(){
-    animateDiv('.aa');
+    animateDiv('.a');
     animateDiv('.b');
     animateDiv('.c');
     animateDiv('.d');
@@ -56,18 +56,34 @@ const animateDiv = (myclass) => {
  const handleStop = (id) => $(id).stop()
  const handleStart = (id) => animateDiv(id)
 
-console.log(height)
-console.log(width)
+// console.log(height)
+// console.log(width)
 
   return (
     <div ref={ref} id=''>
 
-        <div className='aa'>
-          <Ball />
+        <div className='a'>
+          <Ball
+            diameter= '100'
+          />
+        </div>
+
+        <div className='b'>
+          <Ball
+            diameter= '150'
+          />
+        </div>
+
+        <div className='c'>
+          <Ball
+            diameter= '70'
+          />
         </div>
 
         <div className='d'>
-          <Ball />
+          <Ball
+            diameter= '200'
+          />
         </div>
     </div>
   )
