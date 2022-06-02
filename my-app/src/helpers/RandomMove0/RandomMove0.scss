@@ -2,15 +2,15 @@
 
 a { color: inherit; }
 
-.circle-button-wrapper {
-  position: relative;
-}
-
-.circle-button {
-  border-radius: 300px;
-  height: 150px;
-  width: 300px;
-}
+// .circle-button-wrapper {
+//   position: relative;
+// }
+//
+// .circle-button {
+//   border-radius: 300px;
+//   height: 150px;
+//   width: 300px;
+// }
 
 .button-a  {
   background-color: #006699;
@@ -85,6 +85,11 @@ div.d {
 
 .icon {
   font-size: 5em;
+}
+
+.rando-wrapper {
+  position: fixed;
+  width: 50vw;
 }
 
 #random-container {

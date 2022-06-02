@@ -7,9 +7,8 @@ const Ball = (props) => {
 
   return (
     <div>
-    <p>{props.diameter}</p>
       <section className='stage' style={{ width: parseInt(props.diameter), height: parseInt(props.diameter) }}>
-        <figure className="ball bubble"><span  className='eight'></span></figure>
+        <figure style={{ animation: `bubble-anim ${props.speed}s ease-out infinite` }} className="ball bubble"><span  className='eight'></span></figure>
       </section>
     </div>
   )
