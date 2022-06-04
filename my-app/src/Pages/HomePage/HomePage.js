@@ -19,9 +19,12 @@ const HomePage = () => {
         </Row>
         <Row>
           <Col lg={6}>
-            <p id='profile-title'>I am a software developer </p><p id='profile-title'>from Boston Massachusetts</p>
+
+              <h1 id='profile-title'>Software developer </h1>
+              
+
           </Col>
-          
+
         </Row>
         <Row>
           <Col md={{ span: 3, offset: 5}} id="letter-g"></Col>
