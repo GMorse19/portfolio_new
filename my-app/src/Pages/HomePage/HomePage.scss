@@ -28,23 +28,33 @@
 //     border-radius: 0 10px 10px 0;
 // }
 
+.title-wrapper {
+  // perspective: 300px;
+  // perspective-origin: bottom;
+  transform: perspective(500px) rotateY(45deg);
+}
+
 #profile-name {
+  transform: perspective(400px) rotateY(45deg);
   position: relative;
   color: $title-color;
   float: left;
-  margin-left: 15%;
+  margin-left: 25%;
   font-family: $font-playfair;
   font-size: 100px;
   line-height: 1em;
-  padding-top: 30%;
+  margin-top: 50%;
   z-index: 1000;
 }
 
 #profile-title {
+  transform: perspective(300px) rotateY(-45deg);
   position: relative;
   float: left;
-  margin-left: 20%;
+  margin-left: 30%;
   color: $font-color; // grey;
   line-height: .5em;
+  // padding-top: 5%;
+  animation: rotateX90 8s infinite;
   z-index: 1000;
 }
