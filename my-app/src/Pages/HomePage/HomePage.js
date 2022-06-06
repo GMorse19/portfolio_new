@@ -6,6 +6,7 @@ import './HomePage.scss'
 import RandomMove from '../../helpers/RandomMove0/RandomMove'
 import StaticLinks from '../../Components/StaticLinks/StaticLinks'
 import Ball from '../../Components/Ball/Ball'
+import Spinner from '../../Components/Spinner/Spinner'
 
 const HomePage = () => {
   return(
@@ -19,10 +20,7 @@ const HomePage = () => {
         </Row>
         <Row>
           <Col lg={6}>
-
-              <h1 id='profile-title'>Software developer </h1>
-              
-
+            <Spinner />
           </Col>
 
         </Row>
