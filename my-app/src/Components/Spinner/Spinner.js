@@ -67,7 +67,7 @@ mouseOverContainer.onmousemove = function(e) {
   return (
     <div id="ex1" class="container">
       <div id="ex1-layer" class="box">
-        <h1 className='profile-title'>Software</h1>
+        <h1 className='profile-title'>Software Engineer</h1>
       </div>
     </div>
   )
