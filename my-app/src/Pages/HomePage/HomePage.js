@@ -16,11 +16,12 @@ const HomePage = () => {
         <Row>
             <Col lg={6}>
               <h1 id='profile-name'>Geoff Morse</h1>
+              <Spinner />
             </Col>
         </Row>
         <Row>
           <Col lg={6}>
-            <Spinner />
+
           </Col>
 
         </Row>

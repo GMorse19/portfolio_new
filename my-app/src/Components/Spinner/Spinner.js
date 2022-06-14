@@ -44,7 +44,7 @@ let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
 function transforms(x, y, el) {
   let box = el.getBoundingClientRect();
   let calcX = -(y - window.innerHeight / 2) / constrain;
-  let calcY = (x - window.innerWidth / 2);
+  let calcY = (x - window.innerWidth / 2) / constrain;
 
   return "perspective(100px) "
     + "   rotateX("+ calcX +"deg) "
@@ -65,11 +65,11 @@ mouseOverContainer.onmousemove = function(e) {
 };
 
   return (
-    <div id="ex1" class="container">
+
       <div id="ex1-layer" class="box">
-        <h1 className='profile-title'>Software Engineer</h1>
+        <h1 id='profile-sub'>Geoff Morse</h1>
       </div>
-    </div>
+    
   )
 }
 

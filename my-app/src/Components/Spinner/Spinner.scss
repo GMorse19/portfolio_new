@@ -1,25 +1,41 @@
 @import '../../helpers/styles';
 
 .container {
-  height: 10vh;
-  width: 100vw;
+  // height: 10vh;
+  // width: 100vw;
   // display: flex;
   // align-items: center;
   // justify-content: center;
 }
 .box {
-  cursor: move;
-  border: 2px solid red;
+  // cursor: move;
+  // font-size: 100px;
+  transform: perspective(400px) rotateY(45deg) rotateX(35deg);
+  // border: 2px solid red;
   // height: 200px;
-  // width: 200px;
-  position: absolute;
+  width: 70vw;
+  position: relative;
+}
+
+#profile-sub {
+  transform: perspective(400px) rotateY(49deg) rotateX(65deg);
+  // position: relative;
+  color: $title-color;
+  // float: left;
+  // margin-left: 25%;
+  font-family: $font-playfair;
+  font-size: 100px;
+  // line-height: 1em;
+  // margin-top: 50%;
+  z-index: 1000;
 }
 
 .profile-title {
-  transform: perspective(500px) rotateY(-45deg);
-  // position: relative;
+  // transform: perspective(320px) rotateY(68deg) rotateX(65deg);
+  // position: absolute;
   // float: left;
-  margin-left: 30%;
+  // margin-left: 50%;
+  font-size: 60px;
   color: $font-color; // grey;
   // line-height: .5em;
   // padding-top: 5%;
