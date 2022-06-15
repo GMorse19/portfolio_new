@@ -3,7 +3,7 @@ import react from 'react'
 import  './Ball.scss'
 
 const Ball = (props) => {
-  console.log(props.diameter)
+  // console.log(props.diameter)
 
   return (
     <div>

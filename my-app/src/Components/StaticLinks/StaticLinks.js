@@ -11,10 +11,10 @@ const StaticLinks = (props) => (
       image={<i className="icon-user static-links-icon" title='about me'></i>}
     />
     <a className='static-links-a' href='https://github.com/GMorse19' target='_blank'>
-      <i class="icon-social-github static-links-icon" title='Gitub'></i>
+      <i className="icon-social-github static-links-icon" title='Gitub'></i>
     </a>
     <a className='static-links-a' href='https://www.linkedin.com/in/geoff-morse19/' target='_blank'>
-      <i class="icon-social-linkedin static-links-icon" title='LinkedIn'></i>
+      <i className="icon-social-linkedin static-links-icon" title='LinkedIn'></i>
     </a>
   </div>
 )
