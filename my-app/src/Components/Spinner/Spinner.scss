@@ -10,26 +10,25 @@
 .box {
   // cursor: move;
   // font-size: 100px;
-  transform: perspective(400px) rotateY(45deg) rotateX(35deg);
+  // transform: perspective(400px) rotateY(45deg) rotateX(35deg);
   // border: 2px solid red;
   // height: 200px;
-  width: 70vw;
+  // width: 70vw;
   position: relative;
 }
 
 #profile-sub {
-  transform: perspective(400px) rotateY(49deg) rotateX(65deg);
+  // transform: perspective(400px) rotateY(49deg) ;
   // position: relative;
   color: $title-color;
   // float: left;
   // margin-left: 25%;
   font-family: $font-playfair;
-  font-size: 100px;
+  font-size: 50px;
   // line-height: 1em;
   // margin-top: 50%;
   z-index: 1000;
 }
-
 .profile-title {
   // transform: perspective(320px) rotateY(68deg) rotateX(65deg);
   // position: absolute;

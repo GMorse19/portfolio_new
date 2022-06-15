@@ -18,18 +18,18 @@ const ProjectContainer = (props) => {
         </div>
         <div className='project links'>
           <a href={props.siteUrl}>
-            <i class="icon-rocket"></i>
+            <i className="icon-rocket"></i>
           </a>
           <a href={props.github}>
-            <i class="icon-social-github"></i>
+            <i className="icon-social-github"></i>
           </a>
           <a href='https://www.linkedin.com/in/geoff-morse19/'>
-            <i class="icon-social-linkedin"></i>
+            <i className="icon-social-linkedin"></i>
           </a>
         </div>
       </div>
     </div>
-    
+
 </div>
   </Col>
 )
