@@ -60,11 +60,13 @@
       display: block;
       background: radial-gradient(circle at 50% 80%, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 74%, white 80%, white 84%, rgba(255, 255, 255, 0) 100%); }
 
-.explodingBall:hover {
-  width: 50%;
-}
+// .explodingBall:hover {
+//   position: relative;
+//   width: 50%;
+//   height: 50%;
+// }
 
-.stage {
+.explodingStage {
   // width: 200px;
   // height: 200px;
   display: inline-block;
@@ -81,8 +83,14 @@
   perspective-origin: 50% 50%;
 }
 
-.stage:hover {
+.explodingStage:hover {
   background-color: red;
+
+  .explodingBall {
+    position: relative;
+    width: 50%;
+    height: 50%;
+  }
 }
 // body {
 //   width: 300px;
@@ -140,3 +148,28 @@
   97%, 100% {
     -webkit-transform: scale(1);
     transform: scale(1); } }
+
+// Explosion
+  // @color: #e74c3c;
+  // c0392b: #c0392b;
+  span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #e74c3c;
+    margin: 1px;
+    cursor: none;
+    animation: hide .3s ease-in-out forwards;
+    animation-play-state: paused;
+
+    &:hover {
+      animation-play-state: running;
+
+    }
+  }
+  @keyframes hide {
+    0%    {transform:scale(1);}
+    20%   {transform:scale(1.2);background-color:white;}
+    100%  {transform:scale(0);background-color: #c0392b;}
+  }
