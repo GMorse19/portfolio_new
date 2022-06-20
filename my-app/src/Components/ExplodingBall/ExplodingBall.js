@@ -7,7 +7,7 @@ const ExplodingBall = (props) => {
 
   return (
     <div>
-      <section className='stage' style={{ width: 300, height: 300 }}>
+      <section className='explodingStage' style={{ width: 300, height: 300 }}>
         <figure style={{ animation: `bubble-anim 2s ease-out infinite` }} className="explodingBall bubble"><span  className='eight'></span></figure>
       </section>
     </div>

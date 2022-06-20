@@ -31,15 +31,15 @@ function transforms(x, y, el) {
 }
 
 
-mouseOverContainer.onmousemove = function(e) {
-  let xy = [e.clientX, e.clientY];
-  console.log(xy)
-  let position = xy.concat([ex1Layer]);
-
-  window.requestAnimationFrame(function(){
-    transformElement(ex1Layer, position);
-  });
-};
+// mouseOverContainer.onmousemove = function(e) {
+//   let xy = [e.clientX, e.clientY];
+//   console.log(xy)
+//   let position = xy.concat([ex1Layer]);
+//
+//   window.requestAnimationFrame(function(){
+//     transformElement(ex1Layer, position);
+//   });
+// };
 
 
   return (
